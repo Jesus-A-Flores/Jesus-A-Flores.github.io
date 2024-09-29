@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />   
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <!-- Navegación -->
+     <header id="header" class="navegacion">
+        <div class="logo">
+            <a href="/">FFJA<i class="bi bi-braces-asterisk"></i></a>  
+        </div>
+        <nav id="menu" class="menu">
+            <ul>
+                <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                <li><a href="#sobremi" onclick="seleccionar()">Sobre Mi</a></li>
+                <li><a href="#proyectos" onclick="seleccionar()">Proyectos</a></li>
+                <li><a href="#habilidades" onclick="seleccionar()">Habilidades</a></li>
+                <li><a href="#contactos" onclick="seleccionar()">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="nav-resposive" onclick="mosocMenu()">
+            <i class="bi bi-list"></i>
+        </div>
+    </header>
+    <!--SECCION DE INICIO-->
+    <section id="inicio" class="seccion">
+        <div class="user">
+            <div class="content">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                </svg>
+                <h1>JESUS FLORES</h1>
+                <p>Estudiante de Desarrollo de software</p>
+                <div class="social">
+                    <a href="https://github.com/Jesus-A-Flores">
+                        <div>
+                            <i class="bi bi-github">Hithub</i>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jesus-flores-flores-60b349304/">
+                        <div>
+                            <i class="bi bi-linkedin">Linkedin</i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION DE SOBRE MI-->
+    <section id="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, Soy Jesus Flores</span>, estudiante de Desarrollo de Software en la carrera de ingenieria informatica de la Facultad Nacional de Ingenieria (FNI) de la Universidad Tecnica de Oruro (UTO), con pasión por la programación y la creación de soluciones tecnológicas innovadoras. Estoy buscando oportunidades para aplicar mis habilidades en entornos profesionales y aprender de expertos en el campo del desarrollo de software.
+            </p>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <h3>Datos Personales</h3>
+                <ul>
+                    <li>
+                        <strong>Celular:</strong>
+                        +59168336214
+                    </li>
+                    <li>
+                        <strong>Email:</strong>
+                        ffjesus03@gmail.com
+                    </li>
+                    <li>
+                        <strong>Dirección:</strong>
+                        Oruro,Bolivia
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="col">
+                <h3>Intereses</h3>
+                <div class="contenido-intereses">
+                    <div class="card">
+                        <div class="intereses">
+                            <i class="bi bi-controller"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="intereses">
+                            <i class="bi bi-headset"></i>
+                            <span>MUSICA</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="intereses">
+                            <i class="bi bi-person-arms-up"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="boton" onclick="downloadFile()">
+            <button class="button" >
+                Download CV <i class="bi bi-arrow-down"></i>
+            </button>
+        </div>
+    </section>
+
+    <!--SECCION DE PROYECTOS-->
+    <section id="proyectos">
+        <div class="contenedor-proyectos">
+            <h2>Proyectos</h2>
+            <div class="proyectos">
+                <div class="proyecto">
+                    <h3>RELOJ</h3>
+                    <img src="/img/p1.png" alt="" width="200px">
+                    <p>Un proyecto de un reloj realizado con C++ Builder.</p>
+                    <button class="btn">VER</button>
+                </div>
+                <div class="proyecto">
+                    <h3>TRES EN RAYA</h3>
+                    <img src="/img/p2.png" alt="" width="200px">
+                    <p>Juego de tres en raya conocido tambien como TicTacToe</p>
+                    <button class="btn">VER</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION DE HABILIDADES-->
+    <section id="habilidades">
+        <div class="contenedor-habilidades">
+            <h2>Habilidades</h2>
+            <div class="contenido-habilidades">
+                <div class="carta">
+                    <div class="habil">
+                        <div class="circulo" data-nivel="70">
+                            <div class="numero color">70%</div>
+                        </div>
+                        <div class="icono color">
+                            <i class="devicon-cplusplus-plain"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta">
+                    <div class="habil">
+                        <div class="circulo" data-nivel="40">
+                            <div class="numero color">40%</div>
+                        </div>
+                        <div class="icono color">
+                            <i class="devicon-java-plain"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta">
+                    <div class="habil">
+                        <div class="circulo" data-nivel="55">
+                            <div class="numero color">55%</div>
+                        </div>
+                        <div class="icono color">
+                            <i class="devicon-python-plain"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta">
+                    <div class="habil">
+                        <div class="circulo" data-nivel="30">
+                            <div class="numero color">30%</div>
+                        </div>
+                        <div class="icono color">
+                            <i class="devicon-javascript-plain"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta">
+                    <div class="habil">
+                        <div class="circulo" data-nivel="60">
+                            <div class="numero color">60%</div>
+                        </div>
+                        <div class="icono color">
+                            <i class="devicon-html5-plain"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta">
+                    <div class="habil">
+                        <div class="circulo" data-nivel="10">
+                            <div class="numero color">10%</div>
+                        </div>
+                        <div class="icono color">
+                            <i class="devicon-php-plain"></i>          
+                        </div>
+                    </div>
+                </div>
+                <div class="carta">
+                    <div class="habil">
+                        <div class="circulo" data-nivel="27">
+                            <div class="numero color">27%</div>
+                        </div>
+                        <div class="icono color">
+                            <i class="devicon-mysql-plain-wordmark"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta">
+                    <div class="habil">
+                        <div class="circulo" data-nivel="35">
+                            <div class="numero color">35%</div>
+                        </div>
+                        <div class="icono color">
+                            <i class="devicon-git-plain"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--SECCION DE CONTACTO-->
+    <section id="contactos">
+        <div class="contenedor-contactos">
+            <h2>Contacto</h2>
+            <form action="https://formsubmit.co/ffjesus03@gmail.com" method="POST" class="form">
+                <div class="flex">
+                    <label>
+                        <input class="input" type="text" name="first_name" placeholder="" required="">
+                        <span>first name</span>
+                    </label>
+            
+                    <label>
+                        <input class="input" type="text" name="last_name" placeholder="" required="">
+                        <span>last name</span>
+                    </label>
+                </div>  
+                                
+                <label>
+                    <input class="input" type="email" name="email" placeholder="" required="">
+                    <span>email</span>
+                </label> 
+                            
+                <label>
+                    <input class="input" type="tel" name="contact_number" placeholder="" required="">
+                    <span>contact number</span>
+                </label>
+            
+                <label>
+                    <textarea class="input01" name="message" placeholder="" rows="3" required=""></textarea>
+                    <span>message</span>
+                </label>
+                
+                <button type="submit" class="fancy">enviar</button>
+            </form>            
+        </div>
+    </section>
+    <footer class="final">
+        <a href="#inicio" class="up">
+            <i class="bi bi-chevron-double-up"></i>
+        </a>
+        <div>
+            <p>&copy; Mi portafolio, Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
