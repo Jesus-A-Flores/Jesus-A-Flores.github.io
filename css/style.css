@@ -81,9 +81,11 @@ header {
     background-position: center; 
 }
 
-.seccion svg{
+.seccion .logo-img{
     width: 20rem;
     height: 20rem;
+    border-radius: 50%;
+    border: .5rem solid yellow;
 }
 .user{
     width: 30rem;
@@ -190,6 +192,17 @@ header {
         width: 45rem;
         place-items: center;
 
+    }
+}
+@media (max-width:980px) {
+    #sobremi .fila .col{
+        width: 100%;
+    }
+    #sobremi .exp{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 .card {

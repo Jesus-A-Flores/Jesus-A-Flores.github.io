@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 /*para descargar CV*/
 function downloadFile() {
-    const fileUrl = '../documents/PRACTICA.pdf'; // Ruta del archivo en el servidor
-    const fileName = 'PRACTICA.pdf'; // Nombre que se usará para descargar el archivo
+    const fileUrl = '../img/cv.png'; // Ruta del archivo en el servidor
+    const fileName = 'cv.png'; // Nombre que se usará para descargar el archivo
 
     // Crear un enlace temporal
     const a = document.createElement('a');
